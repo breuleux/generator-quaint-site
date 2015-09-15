@@ -1,0 +1,8 @@
+
+provide: main
+
+globals: document
+
+main{} =
+    m = document.getElementById{.main}
+    m.appendChild{document.createTextNode{"La page dit bonjour!"}}

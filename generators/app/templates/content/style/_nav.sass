@@ -1,0 +1,31 @@
+
+@import util
+
+html
+  height: 100%
+
+body
+  @include column
+  font-family: 'Open Sans', sans-serif
+  font-size: $font-size
+  height: 100%
+  margin: 0px
+
+#nav-container
+  background-color: #ddd
+  #nav
+    @include rownav
+    height: 100px
+
+#main-container
+  background-color: #eee
+  flex-grow: 1
+  #main
+    @include block
+
+#foot-container
+  background-color: #000
+  #foot
+    @include rownav
+    color: white
+    height: 200px

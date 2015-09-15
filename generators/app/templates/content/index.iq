@@ -1,0 +1,20 @@
+
+meta ::
+  title = Index
+  template = default
+
+resources ::
+  hello!
+
+List of articles:
+
+{
+  ul %
+    articles each a ->
+      li %
+        a %
+          href = a.url
+          engine.gen{a.title}
+}
+
+There are __{articles.length} articles!

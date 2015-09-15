@@ -1,0 +1,30 @@
+
+require-macros:
+   earl-gulp -> task
+
+require:
+   my-engage
+   node-static
+   gulp
+   http
+
+opts = {
+   hostname = "<%= hostname %>"
+   root = "<%= root %>"
+   assets-root = "<%= root %>assets/"
+   default-language = "<%= defaultLanguage %>"
+   default-extension = ".html"
+   default-image-extension = ".png"
+   server-port = "<%= port %>"
+}
+
+task make:
+   my-engage{opts}.start{}
+
+task serve:
+   s = new node-static.Server{"./output"}
+   http.create-server{f}.listen{opts.server-port} where f{req, res} =
+      req.add-listener{.end, f}.resume{} where f{} =
+         s.serve{req, res}
+
+task default < {make, serve}
