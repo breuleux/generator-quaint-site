@@ -13,7 +13,7 @@
     "gulp": "^3.9.0",
     "earl-gulp": "^3.9.0",
     "node-static": "^0.7.7",
-    "my-engage": ">= 0.0.0"
+    "@breuleux/engage-config": ">= 0.0.0"
   },
   "devDependencies": {
     "jspm": "^0.16.1"

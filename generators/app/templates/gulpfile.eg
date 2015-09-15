@@ -3,7 +3,7 @@ require-macros:
    earl-gulp -> task
 
 require:
-   my-engage
+   @breuleux/engage-config
    node-static
    gulp
    http
@@ -19,7 +19,7 @@ opts = {
 }
 
 task make:
-   my-engage{opts}.start{}
+   engage-config{opts}.start{}
 
 task serve:
    s = new node-static.Server{"./output"}
