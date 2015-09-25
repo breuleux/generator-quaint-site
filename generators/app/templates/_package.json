@@ -8,12 +8,12 @@
     "url": "https://github.com/<%= username %>/<%= name %>"
   },
   "dependencies": {
-    "earlgrey": ">= 0.0.11",
-    "earlgrey-runtime": ">= 0.0.11",
+    "earlgrey": ">= 0.0.12",
+    "earlgrey-runtime": ">= 0.0.10",
     "gulp": "^3.9.0",
-    "earl-gulp": "^3.9.0",
+    "earl-gulp": "^0.0.2",
     "node-static": "^0.7.7",
-    "@breuleux/engage-config": ">= 0.0.0"
+    "@breuleux/engage-config": ">= 0.0.2"
   },
   "devDependencies": {
     "jspm": "^0.16.1"
