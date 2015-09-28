@@ -92,6 +92,7 @@ module.exports = yeoman.generators.Base.extend({
             "content/style/_nav.sass": true,
             "content/style/_util.sass": true,
             "content/lib/config.js": true,
+            "content/lib/toc-scroll.js": true,
             "content/lib/hello.js": true,
             "content/lib/bonjour.eg": true,
         }
