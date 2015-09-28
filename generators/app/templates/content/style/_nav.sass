@@ -15,7 +15,7 @@ body
   background-color: #ddd
   #nav
     @include rownav
-    height: 100px
+    height: $header-height
 
 #main-container
   background-color: #eee
@@ -28,4 +28,22 @@ body
   #foot
     @include rownav
     color: white
-    height: 200px
+    height: $footer-height
+
+#sidebar
+  position: fixed
+  left: 0px
+  top: 0px
+  height: 100%
+  padding-top: $header-height
+  padding-bottom: $footer-height
+  width: $sidebar-width
+  box-sizing: border-box
+  #sidebar-contents
+    position: relative
+    height: 100%
+    overflow: auto
+
+@media screen and (max-width: $main-width+$sidebar-width+100px)
+  #sidebar
+    display: none
